@@ -55,7 +55,7 @@ class ResourceBase(object):
             _query_params.update(query_params)
         return self.c.get(url, query_params=_query_params, return_list=True)
 
-    def _pepare_data(self, data):
+    def _prepare_data(self, data):
         res_data = data
         if isinstance(data, (list, tuple)):
             res_data = {'objects': data}
